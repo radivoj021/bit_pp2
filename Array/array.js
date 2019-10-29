@@ -6,7 +6,6 @@ console.log(months[5], months[9], months[0]);*/
 var daysInWeek = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
 console.log(daysInWeek[6]);*/
 
-
 /*
 var numbers = [2, -4, 5, -2, -11];
 
@@ -45,39 +44,36 @@ if (numbers[3] < 0) {
 if (numbers[4] < 0) {
     result = result + '  ' + numbers[4];
 }
-console.log(result);*/
-
+console.log(result);
 
 var numbers = [2, -4, 5, -2, -11];
 var result = [];
 var j = 0;
 
 if (numbers[0] < 0) {
-    result[j] = numbers[0];
-    j++;
+  result[j] = numbers[0];
+  j++;
 }
 
 if (numbers[1] < 0) {
-    result[j] = numbers[1];
-    j++;
+  result[j] = numbers[1];
+  j++;
 }
 if (numbers[2] < 0) {
-    result[j] = numbers[2];
-    j++;
+  result[j] = numbers[2];
+  j++;
 }
 if (numbers[3] < 0) {
-    result[j] = numbers[3];
-    j++;
+  result[j] = numbers[3];
+  j++;
 }
 if (numbers[4] < 0) {
-    result[j] = numbers[4];
-    j++;
+  result[j] = numbers[4];
+  j++;
 }
 console.log(result);
 
 
-
-/*
 var Niz = [5, 15, -5, 20, 12, 18, 72, 14, 9];
 
 if (Niz[0] % 3 === 0) {
@@ -113,4 +109,65 @@ var greatArray = [[1, 2, 1, 24], [8, 11, 9, 4], [7, 0, 7, 27], [7, 4, 28, 14], [
 
 console.log(greatArray[0][3]);
 console.log(greatArray[2]);
-console.log(greatArray[2][1]);*/
+console.log(greatArray[2][1]);
+
+function filter(niz) {
+  var result = "";
+
+  for (i = 0; i < niz.length; i++) {
+    if (
+      Number.isNaN(niz[i]) ||
+      niz[i] === undefined ||
+      niz[i] === false ||
+      niz[i] === null
+    ) {
+      continue;
+    } else {
+      result += niz[i];
+    }
+  }
+
+  return result;
+}
+
+var str = filter([NaN, 0, 15, false, -22, "", undefined, 47, null]);
+console.log(str);
+
+
+
+function filter(niz) {
+  var result = "";
+
+  for (i = 0; i < niz.length; i++) {
+    if (
+      Number.isNaN(niz[i]) ||
+      niz[i] === false ||
+      niz[i] === undefined ||
+      niz[i] === null ||
+      niz[i] === 0
+    ) {
+      continue;
+    } else {
+      result += niz[i] + " ";
+    }
+  }
+  return result;
+}
+
+var str = filter([NaN, 0, 15, false, -22, "", undefined, 47, null]);
+console.log(str);
+
+*/
+
+function reverse(numbers) {
+  result = "";
+
+  for (i = 0; i < numbers.length; i++) {
+    numbers.reverse();
+    result += numbers[i];
+  }
+  return result;
+}
+
+var calc = niz[(1, 2, 3, 4, 5)];
+console.log(calc);
