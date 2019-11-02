@@ -9,7 +9,9 @@ var str2 = "js";
 var res = "";
 
 for(var i = 0; i < str1.length; i++){
-    res = str1 + str2;
+    if(str1[i] === str1.length){
+        res = re1 + res2;
+    }
 }
 
 console.log(res);
@@ -23,13 +25,37 @@ console.log(res);
 var niz = [NaN, 0, 15, false, -22, '', undefined, 47, null];
 var res = "";
 
-for(i = 0; i < niz.length; i++){
-    if(Number.isNaN(true) || niz[i] === undefined || niz[i] === false || niz[i] === null || niz[i] === ""){
+for(var i = 0; i < niz.length; i++){
+    if(isNaN(true) || niz[i] === undefined || niz[i] === false || niz[i] === null || niz[i] === ""){
         continue;
     }
     else{
-        res += niz[i] + " ";
+        res += niz[i];
     }
 }
 
 console.log(res);
+
+
+
+
+
+/* 3. Write a program to filter out falsy values from the array.
+
+[NaN, 0, 15, false, -22, '', undefined, 47, null]
+
+ */
+
+ var niz = [NaN, 0, 15, false, -22, '', undefined, 47, null];
+ var res = "";
+
+ for(var i = 0; i < niz.length; i++){
+     if(typeof niz[i] === "true"){
+         continue;
+     }
+     else{
+        res += niz[i];
+     }
+ }
+
+ console.log(res);
