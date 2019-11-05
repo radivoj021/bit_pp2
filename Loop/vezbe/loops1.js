@@ -110,3 +110,65 @@ console.log(res);
 //7. Write a program that computes average marks of the following students. Then use this
 //average to determine the corresponding grade.
 
+/*
+    var students = [["david", 80], ["marko", 77], ["danny", 88], ["john", 95], ["thomas", 68]];
+var sumOfMarks = 0;
+var avgMark = 0;
+var res = ""; 
+
+for(var i = 0; i < students.length; i++){
+    sumOfMarks += students[i][1];
+    avgMark = sumOfMarks / students.length;
+    if(students[i][1] < 100 && students[i][1] >= 90){
+        console.log("Student: " + students[i][0] + ", ocena A");
+    }
+    else if(students[i][1] < 90 && students[i][1] >= 80){
+        console.log("Student: " + students[i][0] + ", ocena B");
+    }
+    else if(students[i][1] < 80 && students[i][1] >= 70){
+        console.log("Student: " + students[i][0] + ", ocena C");
+    }
+    else if(students[i][1] < 70 && students[i][1] >= 60){
+        console.log("Student: " + students[i][0] + ", ocena D");
+    }
+    else if(students[i][1] < 60){
+        console.log("Student: " + students[i][0] + ", ocena F");
+    }
+
+}
+console.log("\n" + "Prosecna ocena studenata je: " + avgMark);
+
+*/
+
+
+
+/*
+    8. Write a program that uses console.log to print all the numbers from 1 to 100, with two
+exceptions. For numbers divisible by 3, print "Fizz" instead of the number, and for numbers
+divisible by 5 (and not 3), print "Buzz" instead. When you have that working, modify your
+program to print "FizzBuzz", for numbers that are divisible by both 3 and 5 (and still print
+"Fizz" or "Buzz" for numbers divisible by only one of those).
+*/
+
+/*
+    var niz = [];
+var res = "";
+
+for(var i = 0; i < 101; i++){
+    niz.push(i);
+    if(niz[i] % 3 === 0 && niz[i] % 5 !== 0){
+        niz[i] = "FIZZ";
+    }
+    else if(niz[i] % 3 !== 0 && niz[i] % 5 === 0){
+        niz[i] = "BUZZ";
+    }
+    else if(niz[i] % 3 === 0 || niz[i] % 5 === 0){
+        niz[i] = "fizzbuzz";
+    }
+    res += niz[i] + " ";
+}
+
+console.log(res);
+
+
+*/
