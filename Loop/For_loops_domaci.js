@@ -1,6 +1,6 @@
 // Domaci zadatak sa zvezdicama
 
-var size = 6;
+/*var size = 6;
 var shape = "";
 
 for (row = 0; row < size; row++) {
@@ -14,4 +14,29 @@ for (row = 0; row < size; row++) {
     shape += '\n'
 }
 
-console.log(shape);
+console.log(shape);  */
+
+var visina = 3;
+var res = "\n";
+var sirina = 10;
+var ime = "Radivoj";
+
+
+for(var i = 0; i < visina; i++){
+    for(var j = 0; j < sirina; j++){
+        if(i !== 0 && i !== visina - 1){
+            if(j !== 0 && j !== sirina - 1){
+                res += ime;
+            }
+            else{
+                res += "*";
+            }
+        }
+        else{
+            res += "*";
+        }
+    }
+    res += "\n";
+}
+
+console.log(res);
