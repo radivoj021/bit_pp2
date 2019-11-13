@@ -1,0 +1,17 @@
+/* .fontColor {
+  color: red;
+}
+.bcgColor {
+  background-color: blue;
+}
+ */
+
+.gunSize {
+  float: left;
+}
+
+.divPosition {
+  width: 70%;
+  margin: 0 auto;
+  background-color: lightgrey;
+}
